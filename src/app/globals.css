@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.active-bar{
+    @apply bg-dark-gray rounded-r-full border-l-light-green border-l-4 text-white;
+}

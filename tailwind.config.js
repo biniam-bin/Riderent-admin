@@ -12,6 +12,8 @@ module.exports = {
       current: 'currentColor',
       'primary': '#191c24',
       'light-gray': '#2A3038',
+      'dark-gray': '#0f1015',
+      'txt-gray': '#6c7293',
       'light-blue': '#0090e7',
       'light-green': '#00d25b',
       'black': '#000000',
@@ -19,5 +21,5 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 }

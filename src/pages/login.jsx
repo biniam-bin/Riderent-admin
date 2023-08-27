@@ -12,13 +12,11 @@ function login() {
             className="focus:outline-none bg-light-gray px-3 py-2 rounded-sm text-black my-2"
             placeholder="Username"
           />
-
           <input
             type="text"
             className="focus:outline-none bg-light-gray px-3 py-2 rounded-sm text-black my-2"
             placeholder="Password"
           />
-
           <button className="bg-light-green my-5 py-3 rounded-full text-white">
             Login
           </button>
