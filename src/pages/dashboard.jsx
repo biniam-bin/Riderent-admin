@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import React from "react";
 import "../app/globals.css";
+import Head from "next/head";
 import {
   BsArrowUpRight,
   BsArrowDownLeft,
@@ -95,6 +96,9 @@ const Task = () => {
 function dashboard() {
   return (
     <>
+      <Head>
+        <title>Admin - Dashboard</title>
+      </Head>
       <Layout active="/dashboard">
         <main className="bg-black">
           {/* Top Cards */}
