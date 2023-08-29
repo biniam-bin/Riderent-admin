@@ -8,7 +8,7 @@ function SideBar({ active }) {
   const NavData = [
     { name: "Dashboard", url: "/dashboard", icon: <BsSpeedometer2 /> },
     { name: "Cars", url: "/cars", icon: <LiaCarSideSolid /> },
-    { name: "Employees", url: "/employees", icon: <BsPeople /> },
+    { name: "Users", url: "/users", icon: <BsPeople /> },
     { name: "Comments", url: "/comments", icon: <BsChatLeftText /> },
   ];
   // useEffect(() => {}, [document.location.href.split("/")[3]]);

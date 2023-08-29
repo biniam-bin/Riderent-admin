@@ -4,15 +4,38 @@ import "../app/globals.css";
 import {BsFillTrashFill} from "react-icons/bs"
 
 
+const Modal = () => {
+  return (
+    <>
+      <dialog
+        id="my_modal_1"
+        className="modal bg-primary w-[40rem] shadow-lg shadow-light-green rounded-md"
+      >
+        <div className="modal-container p-8 rounded-md text-txt-gray">
+          <form method="dialog" className="modal-box">
+            <h3 className="font-semibold text-md">Mark</h3>
+            <p className="">
+              mark@gmail.com
+            </p>
+            <p className="py-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto velit unde deleniti laborum libero delectus, dolorum dignissimos tempore saepe beatae?</p>
+            <div className="modal-action">
+              {/* if there is a button in form, it will close the modal */}
+              <button className="btn">Close</button>
+            </div>
+          </form>
+        </div>
+      </dialog>
+    </>
+  );
+}
+
 function comments() {
   return (
     <>
       <Layout active="/comments">
         <main>
-          <div className="bg-primary rounded-md m-6">
-            <h2 className="text-white font-semibold text-2xl p-8">
-              User comments
-            </h2>
+          <div className="bg-primary rounded-md m-6 p-8">
+            <h2 className="text-white font-semibold text-2xl">User comments</h2>
             <div className="table w-full text-txt-gray">
               <div class="flex flex-col">
                 <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -48,7 +71,10 @@ function comments() {
                               +251954736128
                             </td>
                             <td class="whitespace-nowrap px-6 py-4">
-                              <div className="border-2 flex items-center justify-center text-center py-2 rounded-md text-light-green cursor-pointer border-light-green">
+                              <div
+                                onClick={() => window.my_modal_1.showModal()}
+                                className=" btn border-2 flex items-center justify-center text-center py-2 rounded-md text-light-green cursor-pointer border-light-green"
+                              >
                                 View comment
                               </div>
                             </td>
@@ -64,6 +90,7 @@ function comments() {
               </div>
             </div>
           </div>
+          <Modal />
         </main>
       </Layout>
     </>
