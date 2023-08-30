@@ -3,10 +3,14 @@ import React from "react";
 import "../../app/globals.css";
 import { BsFillTrashFill } from "react-icons/bs";
 import Link from "next/link";
+import Head from "next/head";
 
 function orders() {
   return (
     <>
+      <Head>
+        <title>Admin - Orders</title>
+      </Head>
       <Layout active="/orders">
         <main>
           <main>

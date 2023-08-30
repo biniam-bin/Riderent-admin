@@ -2,7 +2,7 @@ import Layout from "@/components/Layout";
 import React from "react";
 import "../app/globals.css";
 import {BsFillTrashFill} from "react-icons/bs"
-
+import Head from "next/head";
 
 const Modal = () => {
   return (
@@ -32,6 +32,9 @@ const Modal = () => {
 function comments() {
   return (
     <>
+      <Head>
+        <title>Admin - Comments</title>
+      </Head>
       <Layout active="/comments">
         <main>
           <div className="bg-primary rounded-md m-6 p-8">

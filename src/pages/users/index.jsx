@@ -3,10 +3,15 @@ import React from "react";
 import "../../app/globals.css";
 import { BsFillTrashFill } from "react-icons/bs";
 import Link from "next/link";
+import Head from "next/head";
+
 
 function users() {
   return (
     <>
+      <Head>
+        <title>Admin - Users</title>
+      </Head>
       <Layout active="/users">
         <main>
           <main>

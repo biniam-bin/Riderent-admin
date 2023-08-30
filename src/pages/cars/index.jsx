@@ -2,11 +2,17 @@ import Layout from "@/components/Layout";
 import React from "react";
 import "../../app/globals.css";
 import Link from "next/link";
+import Head from "next/head";
 import { IoMdAdd } from "react-icons/io";
 import Image from "next/image";
+
+
 function cars() {
   return (
     <>
+      <Head>
+        <title>Admin - Cars</title>
+      </Head>
       <Layout active="/cars">
         <main>
           <div className="flex rounded-md mt-6 p-8 justify-end">
