@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { BsSpeedometer2 } from "react-icons/bs";
 import { LiaCarSideSolid } from "react-icons/lia";
 import { BsPeople, BsChatLeftText } from "react-icons/bs";
+import {LiaFileContractSolid} from "react-icons/lia"
 import Link from "next/link";
 
 function SideBar({ active }) {
@@ -9,6 +10,7 @@ function SideBar({ active }) {
     { name: "Dashboard", url: "/dashboard", icon: <BsSpeedometer2 /> },
     { name: "Cars", url: "/cars", icon: <LiaCarSideSolid /> },
     { name: "Users", url: "/users", icon: <BsPeople /> },
+    { name: "Orders", url: "/orders", icon: <LiaFileContractSolid /> },
     { name: "Comments", url: "/comments", icon: <BsChatLeftText /> },
   ];
   // useEffect(() => {}, [document.location.href.split("/")[3]]);

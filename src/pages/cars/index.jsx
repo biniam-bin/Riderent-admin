@@ -1,20 +1,21 @@
 import Layout from "@/components/Layout";
 import React from "react";
-import "../app/globals.css";
+import "../../app/globals.css";
 import Link from "next/link";
 import { IoMdAdd } from "react-icons/io";
-
+import Image from "next/image";
 function cars() {
   return (
     <>
       <Layout active="/cars">
         <main>
           <div className="flex rounded-md mt-6 p-8 justify-end">
-            <div className="btn text-white bg-light-green px-5 py-1 flex items-center cursor-pointer">
-              <IoMdAdd />
-              
-              Add New
-            </div>
+            <Link href="/cars/add">
+              <div className="btn text-white bg-light-green px-5 py-1 flex items-center cursor-pointer">
+                <IoMdAdd />
+                Add New
+              </div>
+            </Link>
           </div>
           <div className="bg-primary rounded-md mx-6 p-8">
             <h2 className="text-white font-semibold text-2xl">Cars</h2>
@@ -27,7 +28,7 @@ function cars() {
                         <thead class="border-b bg-primary text-txt-gray font-medium dark:border-neutral-500 dark:bg-neutral-600">
                           <tr>
                             <th scope="col" class="px-6 py-4">
-                              #
+                              Id
                             </th>
                             <th scope="col" class="px-6 py-4">
                               Image
@@ -48,16 +49,19 @@ function cars() {
                             <td class="whitespace-nowrap px-6 py-4 font-medium">
                               1
                             </td>
-                            <td class="whitespace-nowrap px-6 py-4">Mark</td>
                             <td class="whitespace-nowrap px-6 py-4">
-                              mark@gmail.com
+                              <Image
+                                src="/banner3.jpg"
+                                width="100"
+                                height={100}
+                                className="rounded-md"
+                              />
                             </td>
+                            <td class="whitespace-nowrap px-6 py-4">Nissan</td>
+                            <td class="whitespace-nowrap px-6 py-4">$245</td>
+                            <td class="whitespace-nowrap px-8 py-4 ">2</td>
                             <td class="whitespace-nowrap px-6 py-4">
-                              +251954736128
-                            </td>
-                            <td class="whitespace-nowrap px-8 py-4 ">4</td>
-                            <td class="whitespace-nowrap px-6 py-4">
-                              <Link href="/users/56">
+                              <Link href="/cars/56">
                                 <div className=" btn border-2 flex items-center justify-center text-center py-2 rounded-md text-light-green cursor-pointer border-light-green">
                                   Details
                                 </div>

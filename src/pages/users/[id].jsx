@@ -1,6 +1,7 @@
 import React from "react";
 import "../../app/globals.css";
 import { FaRegUser } from "react-icons/fa";
+import Link from "next/link";
 
 function UserDetail() {
   return (
@@ -82,12 +83,19 @@ function UserDetail() {
                             1
                           </td>
                           <td class="whitespace-nowrap px-6 py-4">Mark</td>
-                          <td class="whitespace-nowrap px-6 py-4">
-                            mark@gmail.com
-                          </td>
+
                           <td class="whitespace-nowrap px-6 py-4">Toyota</td>
                           <td class="whitespace-nowrap px-8 py-4 text-[#FFC107]">
-                            <div className="border-[1.5px] text-sm flex items-center justify-center text-center rounded-md border-[#FFC107] px-2 py-1">pending</div>
+                            <div className="border-[1.5px] text-sm flex items-center justify-center text-center rounded-md border-[#FFC107] px-2 py-1">
+                              pending
+                            </div>
+                          </td>
+                          <td class="whitespace-nowrap px-6 py-4">
+                            <Link href="/orders/56">
+                              <div className=" btn border-2 flex items-center justify-center text-center py-2 rounded-md text-light-green cursor-pointer border-light-green">
+                                View
+                              </div>
+                            </Link>
                           </td>
                         </tr>
                       </tbody>

@@ -4,14 +4,14 @@ import "../../app/globals.css";
 import { BsFillTrashFill } from "react-icons/bs";
 import Link from "next/link";
 
-function users() {
+function orders() {
   return (
     <>
-      <Layout active="/users">
+      <Layout active="/orders">
         <main>
           <main>
             <div className="bg-primary rounded-md m-6 p-8">
-              <h2 className="text-white font-semibold text-2xl">User</h2>
+              <h2 className="text-white font-semibold text-2xl">Orders</h2>
               <div className="table w-full text-txt-gray">
                 <div class="flex flex-col">
                   <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -24,16 +24,16 @@ function users() {
                                 #
                               </th>
                               <th scope="col" class="px-6 py-4">
-                                Name
+                                User
                               </th>
                               <th scope="col" class="px-6 py-4">
-                                E-mail
+                                Car
                               </th>
                               <th scope="col" class="px-6 py-4">
-                                Phone
+                                Date
                               </th>
                               <th scope="col" class="px-6 py-4">
-                                Orders
+                                Status
                               </th>
                             </tr>
                           </thead>
@@ -43,15 +43,17 @@ function users() {
                                 1
                               </td>
                               <td class="whitespace-nowrap px-6 py-4">Mark</td>
+                              <td class="whitespace-nowrap px-6 py-4">BMW</td>
                               <td class="whitespace-nowrap px-6 py-4">
-                                mark@gmail.com
+                                21/03/2023
+                              </td>
+                              <td class="whitespace-nowrap px-8 py-4 text-[#FFC107]">
+                                <div className="border-[1.5px] text-sm w-[100px] flex items-center justify-center text-center rounded-md border-[#FFC107] px-2 py-1">
+                                  pending
+                                </div>
                               </td>
                               <td class="whitespace-nowrap px-6 py-4">
-                                +251954736128
-                              </td>
-                              <td class="whitespace-nowrap px-8 py-4 ">4</td>
-                              <td class="whitespace-nowrap px-6 py-4">
-                                <Link href="/users/56">
+                                <Link href="/orders/56">
                                   <div className=" btn border-2 flex items-center justify-center text-center py-2 rounded-md text-light-green cursor-pointer border-light-green">
                                     Details
                                   </div>
@@ -73,4 +75,4 @@ function users() {
   );
 }
 
-export default users;
+export default orders;
